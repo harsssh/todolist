@@ -50,6 +50,8 @@ export default {
         name: this.newTaskName,
         deadline: this.newTaskDeadline
       });
+      this.newTaskName = "";
+      this.newTaskDeadline = "";
     },
     finishTask() {
       for (let i = 0; i < this.doneIndex.length; i++) {
